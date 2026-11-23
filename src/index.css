@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #1c1c1c;
+  background: #ffffff;
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+@media print {
+  .workspace-shell {
+    display: block !important;
+    background: white !important;
+  }
+
+  .workspace-shell aside,
+  .workspace-shell header,
+  .no-print {
+    display: none !important;
+  }
+
+  .workspace-shell main {
+    padding: 0 !important;
+  }
+}
